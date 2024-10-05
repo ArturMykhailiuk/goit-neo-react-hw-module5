@@ -1,0 +1,17 @@
+.movieReviews {
+  margin: 20px;
+}
+
+.reviewsFlex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 18px;
+  color: green;
+}

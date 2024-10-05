@@ -1,0 +1,16 @@
+.navFlex {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.navFlex a {
+  text-decoration: none;
+}
+
+.navFlex a:hover {
+  text-decoration: underline;
+}

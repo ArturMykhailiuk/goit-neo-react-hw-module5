@@ -1,0 +1,77 @@
+.listItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  margin-left: 125px;
+  margin-right: 200px;
+}
+
+.itemFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 250px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.itemFlex:hover {
+  transform: scale(1.025);
+}
+
+.itemOverview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+.itemImage {
+  margin: 0;
+  padding: 0;
+  height: 350px;
+  height: 80px;
+}
+
+.itemDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  height: 20px;
+}
+
+.itemLink {
+  text-decoration: none;
+  color: black;
+}
+
+.starIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+}
+
+.calendarIcon {
+  width: 18px;
+  height: 18px;
+  stroke: white;
+  color: white;
+}
+
+.releaseDate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+}

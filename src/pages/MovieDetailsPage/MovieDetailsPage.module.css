@@ -1,0 +1,55 @@
+.backLink {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.additionalLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.additionalLink {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #333;
+}
+
+.additionalLink:hover {
+  color: green;
+}
+
+.poster {
+  width: 400px;
+  height: 600px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: 1px solid #bbbbbb;
+}
+
+.mainFlex {
+  display: flex;
+  gap: 50px;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 300px;
+  gap: 10px;
+}
