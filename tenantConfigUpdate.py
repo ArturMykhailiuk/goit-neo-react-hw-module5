@@ -1,8 +1,16 @@
 import subprocess
 import os
+import tkinter as tk
+from tkinter import filedialog
+
+def select_directory():
+    """Відкриває діалогове вікно для вибору каталогу."""
+    root = tk.Tk()
+    root.withdraw()  # Приховує головне вікно
+    selected_directory = filedialog.askdirectory()
+    return selected_directory
 
 # Кореневий каталог, де знаходяться всі репозиторії
-root_dir = 'D:\\Kofile\\TenantsConfig'
 
 def is_git_repo(repo_path):
     """Перевіряє, чи є папка Git-репозиторієм."""
@@ -64,5 +72,10 @@ def update_all_repos(root_directory):
         else:
             print("Invalid input. Please enter 'y' or 'n'.")
             
-# Викликаємо функцію оновлення всіх репозиторіїв
-update_all_repos(root_dir)
+# Викликаємо функцію вибору каталогу
+root_dir = select_directory()
+if root_dir:
+    # Викликаємо функцію оновлення всіх репозиторіїв
+    update_all_repos(root_dir)
+else:
+    print("No directory selected. Exiting the program.")
