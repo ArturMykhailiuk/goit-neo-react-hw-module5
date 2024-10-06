@@ -51,6 +51,18 @@ def update_all_repos(root_directory):
             print(repo)
     else:
         print("All repositories updated successfully.")
+        
+        # Запитання про вихід з програми
+    while True:
+        exit_choice = input("Do you want to exit the program? (y/n): ").strip().lower()
+        if exit_choice == 'y':
+            print("Exiting the program.")
+            break
+        elif exit_choice == 'n':
+            print("Continuing the program.")
+            break
+        else:
+            print("Invalid input. Please enter 'y' or 'n'.")
             
 # Викликаємо функцію оновлення всіх репозиторіїв
 update_all_repos(root_dir)
