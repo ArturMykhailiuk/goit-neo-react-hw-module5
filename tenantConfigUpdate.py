@@ -10,8 +10,6 @@ def select_directory():
     selected_directory = filedialog.askdirectory()
     return selected_directory
 
-# Кореневий каталог, де знаходяться всі репозиторії
-
 def is_git_repo(repo_path):
     """Перевіряє, чи є папка Git-репозиторієм."""
     return os.path.exists(os.path.join(repo_path, '.git'))
@@ -40,7 +38,7 @@ def git_pull(repo_path, error_repos):
 
 def update_all_repos(root_directory):
     """Оновлює всі репозиторії в кореневому каталозі."""
-    error_repos = []  # Масив для зберігання репозиторіїв з помилками
+    error_repos = []  
     for folder_name in os.listdir(root_directory):
         repo_path = os.path.join(root_directory, folder_name)
         
