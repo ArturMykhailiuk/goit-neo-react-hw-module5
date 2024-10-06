@@ -2,7 +2,7 @@ import subprocess
 import os
 
 # Кореневий каталог, де знаходяться всі репозиторії
-root_dir = 'D:\Kofile\TenantsConfig'
+root_dir = 'D:\\Kofile\\TenantsConfig'
 
 def is_git_repo(repo_path):
     """Перевіряє, чи є папка Git-репозиторієм."""
